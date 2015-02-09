@@ -52,7 +52,8 @@
     list-style: none;
     width:250px;
     top:50%;
-    margin:-100px 0 0 0px;
+    margin:-100px 0 0 0;
+    text-align: center;
 }
 
 .sidebar-nav li {
@@ -81,6 +82,7 @@
     height: 65px;
     font-size: 18px;
     line-height: 60px;
+    margin-bottom: 10px;
 }
 
 .sidebar-nav > .sidebar-brand a {
