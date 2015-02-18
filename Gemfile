@@ -12,6 +12,8 @@ gem 'slim'
 gem 'tilt', '~> 1.4.1' #temporary fix
 gem 'rerun'
 gem 'racksh'
+gem 'omniauth-openid'
+gem 'omniauth-steam'
 
 # Used during local development (on your own machine)
 group :development do
