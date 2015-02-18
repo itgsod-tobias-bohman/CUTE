@@ -3,46 +3,45 @@ video id='bgvid' autoplay='' loop='' poster='polina.jpg'
     source src='./videos/blue_dust.mp4' type='video/mp4'
 
 div id='wrapper'
-
-  div id='sidebar-wrapper'
-    ul class='sidebar-nav'
-      li class='sidebar-brand'
-        a href='#' id='navbar-logo'
-          img title='CUTE' src='/img/logo.png' onmouseover="this.src='/img/logo_white.png'" onmouseout="this.src='/img/logo.png'"
-      li
-        a href='#'
-          span class='glyphicon glyphicon-search' aria-hidden='true'
-          |  Search
-      li.dropdown
-        a.dropdown-toggle data-toggle="dropdown" href="#"
-          span class='glyphicon glyphicon-star' aria-hidden='true'
-          |  Most Wanted
-          span.caret
-        ul.dropdown-menu role="menu"
-          li
-            a href="#"  Borderlands
-          li
-            a href="#"  Civilisation V
-          li
-            a href="#"  Orcs Must Die 2
-      li
-        a href='#'
-          span class='glyphicon glyphicon-check' aria-hidden='true'
-          |  Compare
-      li
-        a href='#'
-          span class='glyphicon glyphicon-cog' aria-hidden='true'
-          |  Coming Soon
-      li
-        a href='#'
-          span class='glyphicon glyphicon-heart' aria-hidden='true'
-          |  About
+  - if @log == true
+    div id='sidebar-wrapper'
+      ul class='sidebar-nav'
+        li class='sidebar-brand'
+          a href='#' id='navbar-logo'
+            img title='CUTE' src='/img/logo.png' onmouseover="this.src='/img/logo_white.png'" onmouseout="this.src='/img/logo.png'"
+        li
+          a href='#'
+            span class='glyphicon glyphicon-search' aria-hidden='true'
+            |  Search
+        li.dropdown
+          a.dropdown-toggle data-toggle="dropdown" href="#"
+            span class='glyphicon glyphicon-star' aria-hidden='true'
+            |  Most Wanted
+            span.caret
+          ul.dropdown-menu role="menu"
+            li
+              a href="#"  Borderlands
+            li
+              a href="#"  Civilisation V
+            li
+              a href="#"  Orcs Must Die 2
+        li
+          a href='#'
+            span class='glyphicon glyphicon-check' aria-hidden='true'
+            |  Compare
+        li
+          a href='#'
+            span class='glyphicon glyphicon-cog' aria-hidden='true'
+            |  Coming Soon
+        li
+          a href='#'
+            span class='glyphicon glyphicon-heart' aria-hidden='true'
+            |  About
 
   div id='page-content-wrapper'
     div class='container-fluid'
       div class='row'
         div class='col-lg-12'
-          a href='#menu-toggle' class='btn btn-default' id='menu-toggle'Toggle Menu
           - if @log != true
             a href='/auth/steam' id='login'
               img src='./img/sits_small.png'
