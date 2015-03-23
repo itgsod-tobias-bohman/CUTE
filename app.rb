@@ -45,7 +45,7 @@ class App < Sinatra::Base
     session[:loggedInSteamUser] = @data['info']['nickname'].to_s
     session[:loggedInSteamUserID] = @id
 
-    @steamuser = SteamUser.first_or_create(steam_64: @id)
+    @steamuser = SteamUser.first_or_create(steam_id: @id)
     redirect back
   end
 

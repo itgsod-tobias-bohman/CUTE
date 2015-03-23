@@ -10,7 +10,7 @@ describe Report do
   describe 'validation' do
 
     it 'should require a reporter' do
-      reportee = SteamUser.create(steam_64: "1294129419240")
+      reportee = SteamUser.create(steam_id: "1294129419240")
       report = Report.create(reportee: reportee, reason: 'Not Nice' )
       expect( report ).not_to be_valid
       expect( report.errors).to include(['Reporter must not be blank'])

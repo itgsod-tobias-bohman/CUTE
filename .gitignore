@@ -18,3 +18,5 @@
 .idea/workspace.xml
 
 db/app-dev.sqlite
+
+Gemfile.lock
