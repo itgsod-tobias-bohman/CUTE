@@ -1,14 +1,14 @@
 # CUTE #
 *Creating Unity Through Entertainment*
 ___
-### About
+## About
 
-### Functions
+## Functions
 
-###### Search
+##### Search
 
-###### Compare
+##### Compare
 
-###### Most Wanted
+##### Most Wanted
 
-### Credits
+## Credits
