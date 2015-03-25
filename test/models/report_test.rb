@@ -19,6 +19,16 @@ describe Report do
       expect( report ).to be_valid
     end
 
+    it 'should require a reportee' do
+      reporter = SteamUser.create(steam_id: "1294129419240")
+      report = Report.create(reporter: reporter, reason: 'Not Nice' )
+      expect( report ).not_to be_valid
+      expect( report.errors).to include(['Reportee must not be blank'])
+
+      report = Report.create(reportee: reporter, reporter: reporter, reason: 'Not Nice' )
+      expect( report ).to be_valid
+    end
+
   end
 
 end
